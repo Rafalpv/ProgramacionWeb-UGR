@@ -11,11 +11,9 @@
     --fuente-principal:'Playfair Display', serif;
 }
 
-
 *::-webkit-scrollbar{
     display: none;
 }
-
 
 body{
     width: 100%;
@@ -62,6 +60,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    letter-spacing: 2px;
 }
 
 .formulario label {
@@ -82,6 +81,7 @@ input[type="submit"],
 
 input[type="submit"] {
     margin-top: 10px;
+    text-transform: uppercase;
 }
 
 input[type="submit"]:hover {
@@ -130,7 +130,7 @@ main {
     width: 100%;
     text-align: center;
     overflow-y: scroll;
-    margin-bottom: 30px;
+    height: 100%;
 }
 
 .contenedor-principal h2 {
@@ -140,7 +140,7 @@ main {
 }
 
 .seccion-general-main {
-    margin-top: 40px;
+    margin: 40px 0px;
 }
 
 .contenedor-peliculas {
@@ -191,9 +191,13 @@ main {
 }
 
 .contenedor-principal-enlaces{
-    font-size: 25px;
+    font-size: 18px;
     font-weight: bold;
     color: var(--oscuro);
+    background-color: var(--oscuro);
+    color: var(--blanco);
+    padding: 15px;
+    border-radius: 10px;
 }
 
 /* Noticias*/
@@ -216,7 +220,6 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
 }
 
 .not1 {
@@ -304,23 +307,11 @@ footer .enlace-footer,p {
 
     main{
         flex-direction: column-reverse;
-    }
-
-    .contenedor-principal{
         height: auto;
     }
 
     .seccion-noticias{
         flex-direction: row;   
-        height: auto;
-        width: auto;    
-    }
-
-    .seccion-noticias::-webkit-scrollbar{
-        display: list-item;
-    }
-
-    .contenedor-principal-enlaces{
-        font-size: 18px;
+        width: auto;
     }
 }
