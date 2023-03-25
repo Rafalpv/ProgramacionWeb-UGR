@@ -15,10 +15,6 @@
     display: none;
 }
 
-body{
-    width: 100%;
-}
-
 a {
     text-decoration: none;
     text-transform: uppercase;
@@ -61,6 +57,8 @@ a {
     justify-content: center;
     align-items: center;
     letter-spacing: 2px;
+    font-weight: bold;
+    font-size:17px;
 }
 
 .formulario label {
@@ -82,6 +80,7 @@ input[type="submit"],
 input[type="submit"] {
     margin-top: 10px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 input[type="submit"]:hover {
@@ -146,48 +145,33 @@ main {
 .contenedor-peliculas {
     display: flex;
     justify-content: space-around;
-    margin: 55px 0px 50px 0px;
+    margin: 45px 0px 50px 0px;
 }
 
 .pelicula {
-    width: 27rem;
-    height: 27rem;
+    width: 33rem;
+    height: 37rem;
     align-items: center;
     text-align: center;
-    border: 3.5px solid var(--morado-espacio);
-    border-radius: 10%;
-    padding: 9px;
-    margin: 0px 25px;
+    border: 5px solid var(--morado-espacio);
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 10%;
     background-color: var(--fondo-pelicula);
 }
 
 .pelicula .foto-pelicula{
-    height: 75%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 10%;
+    height: 80%;
+    width: 100%;
+    border-top-left-radius: 10%;
+    object-fit: cover;
     margin-bottom: 18px;
     cursor:auto;
 }
 
-.pelicula .peli1{
-    background-image: url(../img/peli1.webp);
-}
-
-.pelicula .peli2{
-    background-image: url(../img/peli2.jpg);
-}
-
-.pelicula .peli3{
-    background-image: url(../img/peli3.jpg);
-}
-
 .pelicula a {
-    font-size: 23px;
+    font-size: 2rem;
     font-family: var(--fuente-principal);
-    padding: 20px;
-    align-items: center;
+    padding: 10px;
 }
 
 .contenedor-principal-enlaces{
@@ -274,7 +258,12 @@ footer .enlace-footer,p {
 
 /* Diseño Responsive */
 
-@media(max-width: 1048px) {
+@media(max-width: 1024px) {
+
+    main{
+        flex-direction: column-reverse;
+        height: auto;
+    }
 
     .navegacion {
         flex-direction: column;
@@ -285,9 +274,6 @@ footer .enlace-footer,p {
         border: groove 1px rgba(198, 179, 179, 0.057);
         text-align: center;
     }
-}
-
-@media(max-width: 1900px){
 
     .cabecera{
         flex-direction: column;
@@ -305,13 +291,70 @@ footer .enlace-footer,p {
         margin: 40px;
     }
 
-    main{
-        flex-direction: column-reverse;
-        height: auto;
+    .contenedor-peliculas{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .pelicula{
+        width: 40rem;
+        height: 45rem;
+        margin: 20px auto;
     }
 
     .seccion-noticias{
         flex-direction: row;   
         width: auto;
     }
+
+    .contenedor-principal-enlaces{
+        font-size: 12px;
+    }
 }
+
+/* HORARIOS */
+
+.main-horarios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    align-items: center;
+    text-align: center  ;
+    border-collapse: collapse;
+    height: 80%;
+    width: 80%;
+    text-align: center;
+    border: 3px solid var(--morado-espacio);
+    font-size: 20px;
+}
+  
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+  
+th {
+    background-color: lightgray;
+}
+
+tr{
+    height: 80px;
+}
+
+td {
+    height: 50px;
+}
+  
+td:hover{
+    background-color: var(--lemon);
+}
+
+tr:nth-child(even) {
+    background-color: lightblue;
+}
+  
