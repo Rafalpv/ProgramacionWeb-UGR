@@ -5,7 +5,7 @@
     --oscuro: #202020;
     --blanco: #FFF;
     --rojo: #E7272D;
-    --lemon: #E4EA8C;
+    --lemon: #e3eb7b;
     --morado-espacio: #300726;
     --fondo-pelicula: #d1d4ab6c;
     --fuente-principal:'Playfair Display', serif;
@@ -24,6 +24,12 @@ a {
     -webkit-box-shadow: 14px 3px 11px -3px rgba(0, 0, 0, 0.69);
     -moz-box-shadow: 14px 3px 11px -3px rgba(0, 0, 0, 0.69);
     box-shadow: 14px 3px 11px -3px rgba(0, 0, 0, 0.69);
+}
+
+.main-centrado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Cabecera */
@@ -70,7 +76,10 @@ a {
 
 input[type="submit"],
 [type="text"],
-[type="password"] {
+[type="password"],
+[type="email"],
+[type="number"],
+[type="date"] {
     background-color: var(--blanco);
     padding: 10px 20px;
     margin: 3px;
@@ -121,7 +130,7 @@ img {
 
 main {
     display: flex;
-    background-image: radial-gradient(circle at center, #2c6196,#c8c4dd);
+    background-image: radial-gradient(circle at center, #153f68,#dbcaec);
     height: 78rem;
 }
 
@@ -313,15 +322,28 @@ footer .enlace-footer,p {
     }
 }
 
-/* HORARIOS */
+/* Alta Usuario */
 
-.main-horarios{
-    display: flex;
+.main-altausuario{
     align-items: center;
     justify-content: center;
 }
 
-table {
+.altausuario{    
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    border: 2px solid var(--blanco);
+    padding: 30px;
+    border-radius: 10%;
+    color: var(--oscuro);
+    font-size: 40px;
+    background-color: var(--lemon);
+}
+
+/* Horarios */
+
+.horarios {
     align-items: center;
     text-align: center  ;
     border-collapse: collapse;
@@ -356,5 +378,18 @@ td:hover{
 
 tr:nth-child(even) {
     background-color: lightblue;
+}
+  
+/* Tarifas */
+
+.tarifas {
+    align-items: center;
+    text-align: center  ;
+    border-collapse: collapse;
+    height: 60%;
+    width: 40%;
+    text-align: center;
+    border: 3px solid var(--morado-espacio);
+    font-size: 70px;
 }
   
