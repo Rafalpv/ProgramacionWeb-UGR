@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Multicines</title>
+</head>
+
+<body>
+    <header>
+        <section class="cabecera">
+            <img src="../img/Marvel_Logo.svg" alt="Logo" />
+            <h1>Multicines Marvel</h1>
+            <section class="formulario">
+                <form>
+                    <label for="">Nombre</label>
+                    <input type="text" />
+                    <label for="">Contraseña</label>
+                    <input type="password" />
+                    <input type="submit" value="Enviar" />
+                </form>
+                <a href="../altausuarios.html" class="enlace-formulario">Registro de Usuarios</a>
+            </section>
+        </section>
+        <nav class="navegacion">
+            <a class="enlace-nav" href="../index.html">Inicio</a>
+            <a class="enlace-nav" href="../estrenos.html">Estrenos</a>
+            <a class="enlace-nav" href="../cartelera.html">Cartelera</a>
+            <a class="enlace-nav" href="../horarios.html">Horarios</a>
+            <a class="enlace-nav" href="../tarifas.html">Tarifas</a>
+            <a class="enlace-nav" href="../informacion.html">Información</a>
+        </nav>
+    </header>
+
+    <main class="main-peliculas">
+        <section class="seccion-titulo">
+            <a href="./peli1.html" class="enlace-pelicula anterior"></a>
+            <h3 class="titulo-pelicula">Iron Man I</h3>
+            <a href="" class="enlace-pelicula"></a>
+        </section>
+
+        <section class="imagenes-pelicula">
+            <img src="../img/escudo-ca.png" alt="Foto Peli1">
+            <img src="../img/escudo-ca.png" alt="Foto Peli1">
+            <img src="../img/escudo-ca.png" alt="Foto Peli1">
+            <img src="../img/escudo-ca.png" alt="Foto Peli1">
+        </section>
+
+        <section class="informacion-pelicula">
+            <h3>Datos de la Pelicula</h3>
+            <ul class="lista-peli">
+                <li class="fila-info">
+                  <span>Director:</span> Steven Spielberg
+                </li>
+                <li class="fila-info">
+                  <span>Intérpretes:</span> Tom Hanks, Matt Damon, Tom Sizemore
+                </li>
+                <li class="fila-info">
+                  <span>Sinópsis:</span> En plena Segunda Guerra Mundial, un grupo de soldados es enviado a una peligrosa misión para rescatar a un compañero atrapado detrás de las líneas enemigas.
+                </li>
+                <li class="fila-info">
+                  <span>Temáticas:</span> Guerra, Amistad, Valores
+                </li>
+                <li class="fila-info">
+                  <span>Valoración media:</span>
+                  <span class="valoracion">
+                    <span>4.8</span>
+                  </span>
+                </li>
+              </ul>
+        </section>
+
+        <section class="comentarios-pelicula">
+            <h3>Comentarios</h3>
+            <ul class="lista-peli">
+                <li class="fila-coment"><span>User_1 : </span> La película ha sido increible.Vplvería a verla una y otro vez más</li>
+                <li class="fila-coment"><span>User_2 : </span> La película ha sido increible</li>
+                <li class="fila-coment"><span>User_3 : </span> La película ha sido increible</li>
+                <li class="fila-coment"><span>User_4 : </span> La película ha sido increible</li>
+                <form class="formulario-pelicula">
+                    <label for="">¿Y a tí, qué te ha parecido la película?</label>
+                    <textarea name="comentario-pelicula" cols="30" rows="10"></textarea>
+                    <input type="submit" value="enviar">
+                </form> 
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <a class="enlace-footer" href="../contacto.html">Contacto</a>
+        <p>-</p>
+        <a class="enlace-footer" href="#">Cómo se hizo</a>
+    </footer>
+</body>
+
+</html>
