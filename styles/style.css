@@ -346,7 +346,7 @@ p {
   text-align: center;
   border-collapse: collapse;
   height: 80%;
-  width: 80%;
+  width: 85%;
   text-align: center;
   border: 3px solid var(--morado-espacio);
   font-size: 20px;
@@ -356,10 +356,13 @@ th,
 td {
   border: 1px solid black;
   padding: 10px;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 th {
   background-color: lightgray;
+  width: 30px;
 }
 
 tr {
@@ -388,7 +391,10 @@ tr:nth-child(even) {
   width: 40%;
   text-align: center;
   border: 3px solid var(--morado-espacio);
-  font-size: 70px;
+}
+
+.tarifas th{
+  font-size: 75px;
 }
 
 /* Peliculas */
