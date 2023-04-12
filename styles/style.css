@@ -11,8 +11,25 @@
   --fuente-principal: "Playfair Display", serif;
 }
 
-*::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: none;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f0f0f000;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #837777;
 }
 
 a {
@@ -131,6 +148,10 @@ img {
 }
 
 /* Main - Parte Principal */
+
+.main-index{
+  height: 78rem;
+}
 
 .contenedor-principal {
   width: 100%;
@@ -267,7 +288,7 @@ p {
 /* Diseño Responsive */
 
 @media (max-width: 1024px) {
-  main {
+  .main-index {
     flex-direction: column-reverse;
     height: auto;
   }
@@ -338,6 +359,28 @@ p {
   font-size: 40px;
   background-color: var(--lemon);
 }
+
+/* Estrenos - Carterela - MásValoradas - Proximos Estrenos */
+
+.main-estrenos{
+  padding: 4rem ;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: auto;
+}
+
+.main-estrenos h2 {
+  font-size: 6em;
+  font-family: var(--fuente-principal);
+}
+
+.seccion-estrenos{
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
 
 /* Horarios */
 
