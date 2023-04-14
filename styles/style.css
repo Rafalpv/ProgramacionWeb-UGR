@@ -172,13 +172,13 @@ img {
 
 .contenedor-peliculas {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 45px 0px 50px 0px;
 }
 
 .pelicula {
-  width: 33rem;
-  height: 37rem;
+  width: 22vw;
+  height: 27vw;
   align-items: center;
   text-align: center;
   border: 5px solid var(--morado-espacio);
@@ -187,19 +187,23 @@ img {
   background-color: var(--fondo-pelicula);
 }
 
-.pelicula .foto-pelicula {
+.foto-pelicula {
   height: 80%;
   width: 100%;
   border-top-left-radius: 10%;
   object-fit: cover;
-  margin-bottom: 18px;
-  cursor: auto;
+  margin-bottom: 12px;
+  cursor: pointer;
 }
 
 .pelicula a {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: var(--fuente-principal);
-  padding: 10px;
+}
+
+.datos-pelicula{
+  opacity: 0;
+  color: var(--morado-espacio);
 }
 
 .contenedor-principal-enlaces {
@@ -273,16 +277,20 @@ footer {
   display: flex;
   background-color: var(--oscuro);
   justify-content: center;
+  align-items: center;
   padding: 10px;
 }
 
-footer .enlace-footer,
-p {
+footer .enlace-footer{
   color: var(--blanco);
-  padding: 15px 10px 10px 15px;
+  padding: 15px 10px 10px 10px;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
+}
+
+footer p {
+  color: var(--blanco);
 }
 
 /* Diseño Responsive */
@@ -377,10 +385,9 @@ p {
 
 .seccion-estrenos{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 2rem;
 }
-
 
 /* Horarios */
 
@@ -438,6 +445,27 @@ tr:nth-child(even) {
 
 .tarifas th{
   font-size: 75px;
+}
+
+/* Informacion */
+
+.seccion-informacion{
+  background-color: #bdb5b55d;
+  padding: 2rem;
+  width: 80%;
+  border-radius: 25px;
+}
+
+.seccion-informacion h2 {
+  font-size: 3rem;
+  font-family: var(--fuente-principal);
+  padding: 15px;
+  color: var(--morado-espacio);
+}
+
+.seccion-informacion p {
+  font-size: 28px;
+  color: var(--blanco);
 }
 
 /* Peliculas */
@@ -538,4 +566,29 @@ tr:nth-child(even) {
 }
 .formulario-pelicula textarea{
     margin-top: 10px;
+}
+
+/* Contacto */
+
+.seccion-contacto{
+  background-color: #bdb5b55d;
+  padding: 2rem;
+  width: 80%;
+  height: 80%;
+  border-radius: 25px;
+  color: var(--blanco);
+  font-size: 5rem;
+  text-align: center;
+}
+
+
+.animacion {
+  display: inline-block;
+  overflow: hidden;
+  animation: aparecer 1.5s steps(40) 0s forwards;
+}
+
+@keyframes aparecer {
+  from { width: 40%; }
+  to { width: 80%; }
 }
