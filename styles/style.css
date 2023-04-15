@@ -37,6 +37,10 @@ a {
   text-transform: uppercase;
 }
 
+.in-page{
+  text-decoration: overline;
+}
+
 .sombra {
   -webkit-box-shadow: 14px 3px 11px -3px rgba(0, 0, 0, 0.69);
   -moz-box-shadow: 14px 3px 11px -3px rgba(0, 0, 0, 0.69);
@@ -145,12 +149,14 @@ img {
 .enlace-nav:hover {
   background-color: var(--lemon);
   color: var(--oscuro);
+  transition:all .5s ease-in-out
 }
 
 /* Index - Main*/
 
 .main-index{
   height: 78rem;
+  padding-bottom: 4rem;
 }
 
 .contenedor-principal {
@@ -182,7 +188,7 @@ img {
   align-items: center;
   text-align: center;
   border: 5px solid var(--morado-espacio);
-  border-bottom-right-radius: 10%;
+  border-bottom-right-radius: 15%;
   border-top-left-radius: 10%;
   background-color: var(--fondo-pelicula);
 }
@@ -194,17 +200,42 @@ img {
   object-fit: cover;
   margin-bottom: 12px;
   cursor: pointer;
+  transition: height 0.7s ease;
 }
 
-.pelicula a {
-  font-size: 1.8rem;
+.pelicula  {
+  font-size: 175%;
   font-family: var(--fuente-principal);
 }
 
-.datos-pelicula{
-  opacity: 0;
+.datos-pelicula {
+  text-align: center;
   color: var(--morado-espacio);
+  opacity: 0;
+  padding-top: 5%;
+  font-style: italic;
+  text-transform: none;
+  word-spacing: 3px;
+  position: relative;
+  top: -250px;
 }
+
+.pelicula:hover .datos-pelicula {
+  top: 0px;
+  opacity: 1;
+  transition: opacity 2.5s ease;
+}
+
+.pelicula:hover .datos-pelicula p {
+  height: auto;
+  width: 100%;
+}
+.pelicula:hover .foto-pelicula{
+  height: 50%;
+  transition: height 0.7s ease;
+  border-top-left-radius: 10%;
+}
+
 
 .contenedor-principal-enlaces {
   font-size: 18px;
@@ -274,6 +305,10 @@ img {
 /* Index - Footer */
 
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   background-color: var(--oscuro);
   justify-content: center;
@@ -342,6 +377,7 @@ footer p {
   .seccion-noticias {
     flex-direction: row;
     width: auto;
+    margin-bottom: 3rem;
   }
 
   .contenedor-principal-enlaces {
@@ -436,8 +472,8 @@ tr:nth-child(even) {
   align-items: center;
   text-align: center;
   border-collapse: collapse;
-  height: 60%;
-  width: 40%;
+  height: 80%;
+  width: 60%;
   text-align: center;
   border: 3px solid var(--morado-espacio);
 }
@@ -495,7 +531,6 @@ tr:nth-child(even) {
     background-position: center center;
     height: 100px;
     width: 130px;
-
 }
 
 .anterior{
