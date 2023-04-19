@@ -50,6 +50,7 @@ a {
 .main-centrado {
   align-items: center;
   justify-content: center;
+  height: auto;
 }
 
 main {
@@ -204,7 +205,7 @@ img {
 }
 
 .pelicula  {
-  font-size: 175%;
+  font-size: 1.2vw;
   font-family: var(--fuente-principal);
 }
 
@@ -305,10 +306,6 @@ img {
 /* Index - Footer */
 
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   display: flex;
   background-color: var(--oscuro);
   justify-content: center;
@@ -372,6 +369,7 @@ footer p {
     width: 40rem;
     height: 45rem;
     margin: 20px auto;
+    font-size: 4vw;
   }
 
   .seccion-noticias {
@@ -428,13 +426,10 @@ footer p {
 /* Horarios */
 
 .horarios {
-  align-items: center;
   text-align: center;
   border-collapse: collapse;
   width: 90%;
-  text-align: center;
-  border: 3px solid var(--morado-espacio);
-  font-size: 20px;
+  margin: 60px;
 }
 
 th,
@@ -604,6 +599,17 @@ tr:nth-child(even) {
 
 /* Noticias */
 
+.texto-noticia{
+  height: 70%;
+  width: 80%;
+  font-size: 3em;
+  color: white;
+  background-color: #bdb5b55d;
+  text-align: center;
+  border-radius: 10%;
+  padding: 50px;
+  margin: 100px;  
+}
 
 /* Contacto */
 
