@@ -265,15 +265,15 @@ img {
 }
 
 .not1 {
-  background-image: url("../img/noticia1.jpg");
+  background-image: url("../imagenes/noticia1.jpg");
 }
 
 .not2 {
-  background-image: url("../img/noticia2.jpg");
+  background-image: url("../imagenes/noticia2.jpg");
 }
 
 .not3 {
-  background-image: url("../img/noticia3.jpg");
+  background-image: url("../imagenes/noticia3.jpg");
 }
 
 .noticia a {
@@ -508,6 +508,7 @@ tr:nth-child(odd) {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
   color: var(--blanco);
   height: auto;
 }
@@ -524,7 +525,7 @@ tr:nth-child(odd) {
 }
 
 .enlace-pelicula{
-    background-image: url(../img/flecha.png);
+    background-image: url(../imagenes/flecha.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -538,8 +539,25 @@ tr:nth-child(odd) {
 
 .imagenes-pelicula {
   display: flex;
-  justify-content: space-evenly;
+  width: 80rem;
+  height: 430px;
   padding: 10px;
+}
+
+.imagenes-pelicula img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: .5s ease;
+
+}
+
+.imagenes-pelicula img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
 }
 
 .informacion-pelicula{
