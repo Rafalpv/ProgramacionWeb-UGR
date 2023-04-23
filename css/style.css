@@ -414,6 +414,11 @@ footer p {
 
 /* Horarios */
 
+#main-horario{
+  height: auto;
+  padding: 40px;
+}
+
 #horarios {
   text-align: center;
   border-collapse: collapse;
@@ -497,7 +502,7 @@ tr:nth-child(odd) {
 }
 
 @keyframes aparecer {
-  from { width: 40%; }
+  from { width: 50%; }
   to { width: 80%; }
 }
 
