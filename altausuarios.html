@@ -17,10 +17,10 @@
             <h1>Multicines Marvel</h1>
             <section class="formulario">
                 <form>
-                    <label for="">Nombre</label>
-                    <input type="text" />
-                    <label for="">Contraseña</label>
-                    <input type="password" />
+                    <label for="nombre-reg">Nombre</label>
+                    <input id="nombre-reg" type="text" />
+                    <label for="contrasenia-reg">Contraseña</label>
+                    <input id="contrasenia-reg" type="password" />
                     <input type="submit" value="Enviar" />
                 </form>
                 <a href="./altausuarios.html" class="enlace-formulario">Registro de Usuarios</a>
@@ -36,23 +36,22 @@
         </nav>
     </header>
 
-    <main class="main-altausuario">
-        
-        <form class="altausuario">
-            <label for="">Nombre</label>
-            <input type="text" />
-            <label for="">Apellidos</label>
-            <input type="text" />
-            <label for="">Correo Eléctronico</label>
-            <input type="email" />
-            <label for="">Teléfono</label>
-            <input type="number" />
-            <label for="">Dia de Nacimiento</label>
-            <input type="date" />
-            <label for="">Contraseña</label>
-            <input type="password" />
-            <label for="">¿Como nos conociste?</label>
-            <textarea name="Mensaje" cols="30" rows="10" type="text"></textarea>
+    <main class="main-centrado">
+        <form id="altausuario">
+            <label for="nombre-alta">Nombre</label>
+            <input id="nombre" type="text" />
+            <label for="apellidos-alta">Apellidos</label>
+            <input id="apellidos" type="text" />
+            <label for="email-alta">Correo Eléctronico</label>
+            <input id="email" type="email" />
+            <label for="telefono">Teléfono</label>
+            <input id="telefono" type="number" />
+            <label for="nacimiento">Dia de Nacimiento</label>
+            <input id="nacimientos" type="date" />
+            <label for="contrasenia">Contraseña</label>
+            <input id="contrasenia" type="password" />
+            <label for="masInformacion">¿Como nos conociste?</label>
+            <textarea id="masInformacion" name="Mensaje" cols="30" rows="10" type="text"></textarea>
             <input type="submit" value="Enviar" />
         </form>
     </main>

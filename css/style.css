@@ -379,12 +379,7 @@ footer p {
 
 /* Alta Usuario */
 
-.main-altausuario {
-  align-items: center;
-  justify-content: center;
-}
-
-.altausuario {
+#altausuario {
   display: flex;
   flex-direction: column;
   width: 40rem;
@@ -461,7 +456,7 @@ tr:nth-child(odd) {
 
 /* Tarifas */
 
-.tarifas {
+#tarifas {
   text-align: center;
   border-collapse: collapse;
   height: 80%;
@@ -470,27 +465,27 @@ tr:nth-child(odd) {
   border: 3px solid var(--morado-espacio);
 }
 
-.tarifas th{
+#tarifas th{
   font-size: 75px;
 }
 
 /* Informacion */
 
-.seccion-informacion{
+#informacion{
   background-color: #bdb5b55d;
   padding: 2rem;
   width: 80%;
   border-radius: 25px;
 }
 
-.seccion-informacion h2 {
+#informacion h2 {
   font-size: 3rem;
   font-family: var(--fuente-principal);
   padding: 15px;
   color: var(--morado-espacio);
 }
 
-.seccion-informacion p {
+#informacion p {
   font-size: 28px;
   color: var(--blanco);
 }
@@ -568,13 +563,13 @@ tr:nth-child(odd) {
 }
 
 .valoracion {
-  color: #ffd700; /* color dorado para las estrellas */
+  color: #ffd700; 
 }
 
 .valoracion span:before {
-  content: "\2605"; /* código Unicode para la estrella */
+  content: "\2605"; /* código unicode para la estrella */
 }
-
+  
 .comentarios-pelicula{
     border: 2px solid var(--blanco);
     margin: 30px;
@@ -622,7 +617,7 @@ tr:nth-child(odd) {
 
 /* Contacto */
 
-.seccion-contacto{
+#contacto{
   display: flex;
   flex-direction: column;
   background-color: #bdb5b55d;
